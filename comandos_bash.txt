@@ -1,41 +1,46 @@
-ls		lista arquivos da pasta atual
-ls -a		mostra arquivos ocultos (-all)
+- .			o ponto representa a pasta atual nos comandos
+- *			o asterisco representa tudo
 
-cd		change directory
-		troca o diretório
-cd ..		para voltar uma pasta acima
-cd [nome]/	vai para o diretório inserido em [Nome]/
-		é importante lembrar que só pode transitar entre os arquivos
-		e pastas da pasta atual, se quiser ir pra outra pasta,
-		precisa sair da pasta atual, e caminhar até o diretório
-		onde a outra pasta está
+- ls			lista arquivos da pasta atual
+- ls -a			mostra arquivos ocultos (-all)
 
-pwd		mostra o diretório atual
+- cd			change directory
+			troca o diretório
+- cd ..			para voltar uma pasta acima
+- cd [nome]/		vai para o diretório inserido em [Nome]/
+			é importante lembrar que só pode transitar entre os arquivos
+			e pastas da pasta atual, se quiser ir pra outra pasta,
+			precisa sair da pasta atual, e caminhar até o diretório
+			onde a outra pasta está
 
-mkdir		make directory - cria pasta no diretório atual
+- pwd			mostra o diretório atual
 
-cat 'nome do	abre o arquivo e mostra o conteúdo dele
+- mkdir			make directory - cria pasta no diretório atual
+
+- cat 'nome do		abre o arquivo e mostra o conteúdo dele
 arquivo'
 
-rm 'nome	remove o arquivo selecionado
+- rm 'nome		remove o arquivo selecionado
 do arquivo'
-rm -rf 'nome	remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) -force (apaga sem pedir autorização)
-do arquivo'
-
-git init .	inicia um repositório git, que permite versionar arquivos
-
-git status	verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão 		versionados
-
-git add 'nome	adiciona o arquivo ao commit (o que permite que crie versões)
+- rm -rf 'nome		remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) -force (apaga sem pedir autorização)
 do arquivo'
 
-git commit -m	cria um commit e nomeia para facilitar identificar qual commit se trata
+- git init .		inicia um repositório git, que permite versionar arquivos
+
+- git status		verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão 		versionados
+
+- git add 'nome		adiciona o arquivo ao commit (o que permite que crie versões)
+do arquivo'
+- git add .		adiciona todos os arquivos ao commit 
+
+- git commit -m		cria um commit e nomeia para facilitar identificar qual commit se trata
 'nome do commit'
 
-git config	configurar o git
-		--global user.email "" (inserir o email entre as aspas) configura o email
-		--global user.name "" (inserir o nome entre as aspas)	configura o usuário
-		--global user.email					verifica qual email está sendo usado
-		--global user.name					verifica qual nome está sendo usado
+- git config		configurar o git
+			--global user.email "" (inserir o email entre as aspas) configura o email
+			--global user.name "" (inserir o nome entre as aspas)	configura o usuário
+			--global user.email					verifica qual email está sendo usado
+			--global user.name					verifica qual nome está sendo usado
 
-INSERÇÃO SÓ PRA TESTE
+- git log		mostra um log com todos os commits
+
