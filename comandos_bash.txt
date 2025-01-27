@@ -1,0 +1,25 @@
+ls		lista arquivos da pasta atual
+ls -a		mostra arquivos ocultos (-all)
+
+cd		change directory
+		troca o diretório
+cd ..		para voltar uma pasta acima
+cd [nome]/	vai para o diretório inserido em [Nome]/
+		é importante lembrar que só pode transitar entre os arquivos
+		e pastas da pasta atual, se quiser ir pra outra pasta,
+		precisa sair da pasta atual, e caminhar até o diretório
+		onde a outra pasta está
+
+pwd		mostra o diretório atual
+
+mkdir		make directory - cria pasta no diretório atual
+
+cat 'nome do	abre o arquivo e mostra o conteúdo dele
+arquivo'
+
+rm 'nome	remove o arquivo selecionado
+do arquivo'
+rm -rf 'nome	remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) -force (apaga sem pedir autorização)
+do arquivo'
+
+git init .	inicia um repositório git, que permite versionar arquivos
