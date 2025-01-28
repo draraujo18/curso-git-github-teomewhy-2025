@@ -1,3 +1,5 @@
+este arquivo contém comandos secundários de git
+
 TESTE
 TESTE
 TESTE
