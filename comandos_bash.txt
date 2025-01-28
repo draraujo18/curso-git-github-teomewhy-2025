@@ -1,4 +1,4 @@
-- .			o ponto representa a pasta atual nos comandos
+- .			o ponto representa tudo na pasta atual nos comandos
 - *			o asterisco representa tudo
 
 - ls			lista arquivos da pasta atual
@@ -22,12 +22,13 @@ arquivo'
 
 - rm 'nome		remove o arquivo selecionado
 do arquivo'
-- rm -rf 'nome		remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) -force (apaga sem pedir autorização)
-do arquivo'
+- rm -rf 'nome		remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) 
+do arquivo'		-force (apaga sem pedir autorização)
 
 - git init .		inicia um repositório git, que permite versionar arquivos
 
-- git status		verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão 		versionados
+- git status		verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão
+			versionados
 
 - git add 'nome		adiciona o arquivo ao commit (o que permite que crie versões)
 do arquivo'
@@ -44,3 +45,18 @@ do arquivo'
 
 - git log		mostra um log com todos os commits
 
+- git diff 'nome do	mostra o que foi alterado dentro do arquivo dado
+arquivo'
+
+- git reset 'nome	quando você insere mais de um arquivo pra commit mas você quer voltar atrás
+do arquivo'		é só digitar 'git reset <nome do arquivo>' para que esse arquivo não
+			seja commitado junto a outro
+
+FLUXO DE TRABALHO (USAR GIT STATUS APÓS QUALQUER PASSO ABAIXO DO 3)
+
+1. criar o diretório do projeto (mkdir)
+2. iniciar o git dentro do diretório criado (git init .)
+3. edita ou cria arquivos
+4. git status
+5. adiciona os arquivos ao commit ('git add .' para todos os arquivos ou 'git add nome_arquivo' para adicionar um arquivo especifico)
+6. commita os arquivos (git commit -m "mensagem para identificar facilmente à que se refere o commit)
