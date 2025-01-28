@@ -10,4 +10,3 @@ TESTE
 TESTE
 TESTE
 TESTE
->>>>>>> Secundaria
