@@ -57,6 +57,9 @@ do arquivo'		é só digitar 'git reset <nome do arquivo>' para que esse arquivo 
 - git checkout -b	cria nova branch (-b para criar nova branch e mudar-nos para a nova)
 <nome da branch>
 
+- git merge		o comando mescla as alterações efetuadas em cada arquivo da branch desejada para a branch atual
+<branch desejada>
+
 FLUXO DE TRABALHO (USAR GIT STATUS APÓS QUALQUER PASSO ABAIXO DO 3)
 
 1. criar o diretório do projeto (mkdir)

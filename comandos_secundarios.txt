@@ -1,1 +1,13 @@
 este arquivo contém comandos secundários de git
+
+este arquivo contém comandos secundários de git
+
+TESTE
+TESTE
+TESTE
+TESTE
+TESTE
+TESTE
+TESTE
+TESTE
+>>>>>>> Secundaria
