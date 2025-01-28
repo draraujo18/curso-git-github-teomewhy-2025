@@ -52,6 +52,11 @@ arquivo'
 do arquivo'		é só digitar 'git reset <nome do arquivo>' para que esse arquivo não
 			seja commitado junto a outro
 
+- git checkout		muda para branch escolhida
+<nome da branch>
+- git checkout -b	cria nova branch (-b para criar nova branch e mudar-nos para a nova)
+<nome da branch>
+
 FLUXO DE TRABALHO (USAR GIT STATUS APÓS QUALQUER PASSO ABAIXO DO 3)
 
 1. criar o diretório do projeto (mkdir)
