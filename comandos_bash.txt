@@ -57,6 +57,10 @@ do arquivo'		é só digitar 'git reset <nome do arquivo>' para que esse arquivo 
 - git checkout -b	cria nova branch (-b para criar nova branch e mudar-nos para a nova)
 <nome da branch>
 
+- git branch		lista todas as branches criadas até o momento
+- git branch -D		-D para deletar a branch especificada após o D
+<nome branch>
+
 - git merge		o comando mescla as alterações efetuadas em cada arquivo da branch desejada para a branch atual
 <branch desejada>
 
