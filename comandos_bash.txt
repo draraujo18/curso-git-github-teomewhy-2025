@@ -1,17 +1,16 @@
-- .			o ponto representa tudo na pasta atual nos comandos
-- *			o asterisco representa tudo
+- .				o ponto representa tudo na pasta atual nos comandos
+- *				o asterisco representa tudo
 
-- ls			lista arquivos da pasta atual
+- ls				lista arquivos da pasta atual
 - ls -a			mostra arquivos ocultos (-all)
 
-- cd			change directory
-			troca o diretório
+- cd				change directory - troca o diretório
 - cd ..			para voltar uma pasta acima
 - cd [nome]/		vai para o diretório inserido em [Nome]/
-			é importante lembrar que só pode transitar entre os arquivos
-			e pastas da pasta atual, se quiser ir pra outra pasta,
-			precisa sair da pasta atual, e caminhar até o diretório
-			onde a outra pasta está
+				é importante lembrar que só pode transitar entre os arquivos
+				e pastas da pasta atual, se quiser ir pra outra pasta,
+				precisa sair da pasta atual, e caminhar até o diretório
+				onde a outra pasta está
 
 - pwd			mostra o diretório atual
 
@@ -25,32 +24,32 @@ do arquivo'
 - rm -rf 'nome		remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) 
 do arquivo'		-force (apaga sem pedir autorização)
 
-- git init .		inicia um repositório git, que permite versionar arquivos
+- git init .			inicia um repositório git, que permite versionar arquivos
 
 - git status		verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão
-			versionados
+				versionados
 
 - git add 'nome		adiciona o arquivo ao commit (o que permite que crie versões)
 do arquivo'
-- git add .		adiciona todos os arquivos ao commit 
+- git add .			adiciona todos os arquivos ao commit 
 
-- git commit -m		cria um commit e nomeia para facilitar identificar qual commit se trata
+- git commit -m	cria um commit e nomeia para facilitar identificar qual commit se trata
 'nome do commit'
 
 - git config		configurar o git
-			--global user.email "" (inserir o email entre as aspas) configura o email
-			--global user.name "" (inserir o nome entre as aspas)	configura o usuário
-			--global user.email					verifica qual email está sendo usado
-			--global user.name					verifica qual nome está sendo usado
+				--global user.email "" (inserir o email entre as aspas) 	configura o email
+				--global user.name "" (inserir o nome entre as aspas)	configura o usuário
+				--global user.email								verifica qual email está sendo usado
+				--global user.name								verifica qual nome está sendo usado
 
-- git log		mostra um log com todos os commits
+- git log			mostra um log com todos os commits
 
 - git diff 'nome do	mostra o que foi alterado dentro do arquivo dado
 arquivo'
 
 - git reset 'nome	quando você insere mais de um arquivo pra commit mas você quer voltar atrás
 do arquivo'		é só digitar 'git reset <nome do arquivo>' para que esse arquivo não
-			seja commitado junto a outro
+				seja commitado junto a outro
 
 - git checkout		muda para branch escolhida
 <nome da branch>
