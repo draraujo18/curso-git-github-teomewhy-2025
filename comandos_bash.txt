@@ -2,41 +2,41 @@
 - *				o asterisco representa tudo
 
 - ls				lista arquivos da pasta atual
-- ls -a			mostra arquivos ocultos (-all)
+- ls -a				mostra arquivos ocultos (-all)
 
 - cd				change directory - troca o diretório
-- cd ..			para voltar uma pasta acima
-- cd [nome]/		vai para o diretório inserido em [Nome]/
+- cd ..				para voltar uma pasta acima
+- cd [nome]/			vai para o diretório inserido em [Nome]/
 				é importante lembrar que só pode transitar entre os arquivos
 				e pastas da pasta atual, se quiser ir pra outra pasta,
 				precisa sair da pasta atual, e caminhar até o diretório
 				onde a outra pasta está
 
-- pwd			mostra o diretório atual
+- pwd				mostra o diretório atual
 
-- mkdir			make directory - cria pasta no diretório atual
+- mkdir				make directory - cria pasta no diretório atual
 
-- cat 'nome do		abre o arquivo e mostra o conteúdo dele
+- cat 'nome do			abre o arquivo e mostra o conteúdo dele
 arquivo'
 
-- rm 'nome		remove o arquivo selecionado
+- rm 'nome			remove o arquivo selecionado
 do arquivo'
-- rm -rf 'nome		remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) 
-do arquivo'		-force (apaga sem pedir autorização)
+- rm -rf 'nome			remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) 
+do arquivo'			-force (apaga sem pedir autorização)
 
 - git init .			inicia um repositório git, que permite versionar arquivos
 
-- git status		verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão
-				versionados
+- git status			verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão
+					versionados
 
-- git add 'nome		adiciona o arquivo ao commit (o que permite que crie versões)
+- git add 'nome			adiciona o arquivo ao commit (o que permite que crie versões)
 do arquivo'
 - git add .			adiciona todos os arquivos ao commit 
 
-- git commit -m	cria um commit e nomeia para facilitar identificar qual commit se trata
+- git commit -m			cria um commit e nomeia para facilitar identificar qual commit se trata
 'nome do commit'
 
-- git config		configurar o git
+- git config			configurar o git
 				--global user.email "" (inserir o email entre as aspas) 	configura o email
 				--global user.name "" (inserir o nome entre as aspas)	configura o usuário
 				--global user.email								verifica qual email está sendo usado
@@ -44,23 +44,23 @@ do arquivo'
 
 - git log			mostra um log com todos os commits
 
-- git diff 'nome do	mostra o que foi alterado dentro do arquivo dado
+- git diff 'nome do		mostra o que foi alterado dentro do arquivo dado
 arquivo'
 
-- git reset 'nome	quando você insere mais de um arquivo pra commit mas você quer voltar atrás
-do arquivo'		é só digitar 'git reset <nome do arquivo>' para que esse arquivo não
+- git reset 'nome		quando você insere mais de um arquivo pra commit mas você quer voltar atrás
+do arquivo'			é só digitar 'git reset <nome do arquivo>' para que esse arquivo não
 				seja commitado junto a outro
 
-- git checkout		muda para branch escolhida
+- git checkout			muda para branch escolhida
 <nome da branch>
-- git checkout -b	cria nova branch (-b para criar nova branch e mudar-nos para a nova)
+- git checkout -b		cria nova branch (-b para criar nova branch e mudar-nos para a nova)
 <nome da branch>
 
-- git branch		lista todas as branches criadas até o momento
-- git branch -D		-D para deletar a branch especificada após o D
+- git branch			lista todas as branches criadas até o momento
+- git branch -D			-D para deletar a branch especificada após o D
 <nome branch>
 
-- git merge		o comando mescla as alterações efetuadas em cada arquivo da branch desejada para a branch atual
+- git merge			o comando mescla as alterações efetuadas em cada arquivo da branch desejada para a branch atual
 <branch desejada>
 
 FLUXO DE TRABALHO (USAR GIT STATUS APÓS QUALQUER PASSO ABAIXO DO 3)
@@ -71,3 +71,11 @@ FLUXO DE TRABALHO (USAR GIT STATUS APÓS QUALQUER PASSO ABAIXO DO 3)
 4. git status
 5. adiciona os arquivos ao commit ('git add .' para todos os arquivos ou 'git add nome_arquivo' para adicionar um arquivo especifico)
 6. commita os arquivos (git commit -m "mensagem para identificar facilmente à que se refere o commit)
+
+Fluxo de trabalho - Aula 02
+
+1. Ao iniciar o trabalho, criar uma branch para mim					git branch -b <nome da branch>
+2. Fazer merge com a main para puxar os arquivos disponíveis pra minha branch		git merge main
+3. Fazer as alterações necessárias	 e commitar					git add .		git commit -m <"comentário sobre o commit">
+4. Fazer merge da minha branch com a main para jogar as alterações lá			git checkout main	git merge <nome da branch>
+5. Tratar erros, quando necessário.							abrir o arquivo, alterar o que for necessário, depois commitar normalmente.
