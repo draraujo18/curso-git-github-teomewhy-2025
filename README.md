@@ -8,7 +8,7 @@ Aprendemos a instalar o Git na nossa máquina, entrar, criar repositório, inici
 
 Ainda veremos GitFlow e VSCode ao final do curso.
 
-Estou, sinceramente, muito satisfeito pelo simples fato de podermos ter contato com a ferramenta, poder operá-la e, quando mais contato temos, mas troubleshooting fazemos e mais experiência adquirimos.
+Estou, sinceramente, muito satisfeito pelo simples fato de podermos ter contato com a ferramenta, poder operá-la e, quanto mais contato temos, mais troubleshooting fazemos e mais experiência adquirimos.
 Sigam o TeoMeWhy nas redes sociais, todos os cursos dele são GRATUITOS e com certeza entregam mais do que apenas o básico. O cara é incrível!
 
 - o arquivo01 e arquivo02 só foram criados para entendermos o conceito de branches e merge

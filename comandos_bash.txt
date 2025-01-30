@@ -82,6 +82,7 @@ do arquivo'			é só digitar 'git reset <nome do arquivo>' para que esse arquivo
 				   https  Ele vai exigir que você faça login toda vez que você tentar fazer conexão entre o local e o remoto
 				   ssh    Ele vai relembrar que SUA MÁQUINA é confiável, e não vai exigir autenticação toda vez que você tentar estabelecer conexão
 
+- git pull origin main		Traz as alterações efetuadas no GitHub (remoto) para a máquina. É o inverso do push.
 
 
 TERMINOLOGIAS
@@ -93,7 +94,7 @@ TERMINOLOGIAS
 - ls				List Segments ou List	- Serve para listar os arquivos e diretórios dentro de um diretório específico
 - cat				Concatenate		- Serve pra mostrar o conteúdo de arquivos, e para concatenar o conteúdo de um arquivo com outro
 - mkdir				Make Directory		- Serve para criar uma pasta nova
-
+- fork				Trazer um repositório de outro usuário para o seu próprio usuário no GitHub. Basta abrir o projeto desejado e encontrar o botão Fork.
 
 FLUXO DE TRABALHO (USAR GIT STATUS APÓS QUALQUER PASSO ABAIXO DO 3)
 
