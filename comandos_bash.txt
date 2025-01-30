@@ -12,35 +12,38 @@
 				precisa sair da pasta atual, e caminhar até o diretório
 				onde a outra pasta está
 
-- pwd				mostra o diretório atual
+- touch 			Cria um arquivo e define a sua extensão (formato)
+<nome arquivo.extensão>
 
-- mkdir				make directory - cria pasta no diretório atual
+- pwd				print working directory - mostra o diretório atual
+
+- mkdir				make directory - cria pasta no diretório (pasta) atual
 
 - cat 'nome do			abre o arquivo e mostra o conteúdo dele
 arquivo'
 
-- rm 'nome			remove o arquivo selecionado
-do arquivo'
-- rm -rf 'nome			remove o arquivo selecionado -recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) 
-do arquivo'			-force (apaga sem pedir autorização)
+- rm 'nome do arquivo'		remove o arquivo selecionado
 
-- git init .			inicia um repositório git, que permite versionar arquivos
+- rm -rf 'nome			remove o arquivo selecionado	-recursive (apaga todas as pastas e subpastas, ou seja, de maneira recursiva) 
+do arquivo'							-force (apaga sem pedir autorização)
+
+- git init .			inicia um repositório git, que permite versionar arquivos | . para indicar a pasta atual
 
 - git status			verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão
-					versionados
+				versionados
 
 - git add 'nome			adiciona o arquivo ao commit (o que permite que crie versões)
 do arquivo'
-- git add .			adiciona todos os arquivos ao commit 
+- git add .			adiciona todos os arquivos da pasta ao commit 
 
 - git commit -m			cria um commit e nomeia para facilitar identificar qual commit se trata
 'nome do commit'
 
 - git config			configurar o git
-				--global user.email "" (inserir o email entre as aspas) 	configura o email
+				--global user.email "" (inserir o email entre as aspas) configura o email
 				--global user.name "" (inserir o nome entre as aspas)	configura o usuário
-				--global user.email								verifica qual email está sendo usado
-				--global user.name								verifica qual nome está sendo usado
+				--global user.email					verifica qual email está sendo usado
+				--global user.name					verifica qual nome está sendo usado
 
 - git log			mostra um log com todos os commits
 
@@ -57,11 +60,40 @@ do arquivo'			é só digitar 'git reset <nome do arquivo>' para que esse arquivo
 <nome da branch>
 
 - git branch			lista todas as branches criadas até o momento
-- git branch -D			-D para deletar a branch especificada após o D
-<nome branch>
+- git branch -D	<nome branch>	-D para deletar a branch especificada após o D
+- git branch -M	<nome branch>	Força a alteração da branch atual para o nome especificado em <nome branch>
+				Se você inserir dois nomes após o -M
+				- git branch <nome atual> <novo nome>
+				    O primeiro específica uma branch já existente
+				    O segundo define o novo nome para essa branch				  
 
 - git merge			o comando mescla as alterações efetuadas em cada arquivo da branch desejada para a branch atual
-<branch desejada>
+  <branch desejada>		git branch para verificar se está na branch pra qual deseja trazer os arquivos da branch do comando
+
+- git remote			Faz a conexão do repositório local (sua máquina) com o repositório remoto (GitHub) 
+  add origin <link https	Ex.: git remote add origin https://github.com/usuario/<repositório online>
+  para seu GitHub>		
+- git remote -v			Visualiza os repositórios remotos
+- git remote remove origin	Remove repositório remoto
+
+
+- git push origin main		Envia para 'origin' as alterações feitas na branch 'main'
+				Obs importantes: Existem duas maneiras de conectar o git ao GitHub e isso é definido no GitHub, pelo meio de autenticação.
+				   https  Ele vai exigir que você faça login toda vez que você tentar fazer conexão entre o local e o remoto
+				   ssh    Ele vai relembrar que SUA MÁQUINA é confiável, e não vai exigir autenticação toda vez que você tentar estabelecer conexão
+
+
+
+TERMINOLOGIAS
+
+- origin			É um nome padrão para o repositório quando você clona do repositório local para o remoto, e vice-versa.
+				Por isso é utilizado em alguns comandos, pois refere-se ao nome do repositório.
+- cd				Change Directory 	- O comando serve para mudar o diretório
+- pwd				Print Working Directory - Serve pra mostrar o diretório em que se encontra atualmente
+- ls				List Segments ou List	- Serve para listar os arquivos e diretórios dentro de um diretório específico
+- cat				Concatenate		- Serve pra mostrar o conteúdo de arquivos, e para concatenar o conteúdo de um arquivo com outro
+- mkdir				Make Directory		- Serve para criar uma pasta nova
+
 
 FLUXO DE TRABALHO (USAR GIT STATUS APÓS QUALQUER PASSO ABAIXO DO 3)
 
