@@ -13,3 +13,6 @@ Sigam o TeoMeWhy nas redes sociais, todos os cursos dele são GRATUITOS e com ce
 
 - o arquivo01 e arquivo02 só foram criados para entendermos o conceito de branches e merge
 - comandos_bash.txt tem DIVERSOS comandos de Linux e Git, além de várias dicas e insights sobre workflow e e algumas terminologias para facilitar o entendimento
+
+Confiram os cursos gratuitos na página do YouTube.
+[Cursos TeoMeWhy YouTube](https://youtube.com/@teomewhy)
