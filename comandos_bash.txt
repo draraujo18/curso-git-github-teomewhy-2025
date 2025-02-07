@@ -30,11 +30,11 @@ do arquivo'							-force (apaga sem pedir autorização)
 - git init .			inicia um repositório git, que permite versionar arquivos | . para indicar a pasta atual
 
 - git status			verifica o status da pasta atual (se um repositório está iniciado) e se os arquivos estão
-				versionados
+						versionados
 
 - git add 'nome			adiciona o arquivo ao commit (o que permite que crie versões)
 do arquivo'
-- git add .			adiciona todos os arquivos da pasta ao commit 
+- git add .				adiciona todos os arquivos da pasta ao commit 
 
 - git commit -m			cria um commit e nomeia para facilitar identificar qual commit se trata
 'nome do commit'
