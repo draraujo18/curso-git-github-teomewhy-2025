@@ -17,3 +17,7 @@ Sigam o TeoMeWhy nas redes sociais, todos os cursos dele são GRATUITOS e com ce
 Confiram os cursos gratuitos na página do YouTube.
 
 [Cursos TeoMeWhy YouTube](https://youtube.com/@teomewhy)
+
+Além disso, confiram a agenda para ficar por dentro de tudo que o Teo vai fazer durante 2025.
+
+[Site TeoMeWhy](https://teomewhy.org/schedule)
